@@ -13,10 +13,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-
     <link rel="stylesheet" href="osn.css">
     <style>
-           .rune-about {
+         .rune-about {
             display: flex;
             flex-wrap: wrap;
             /* flex-direction: column; */
@@ -39,13 +38,14 @@
             background-color: #0e0422;
             border-radius: 15px;
         }
+        .rune-info{ 
+            width: 100%;
+        }
     </style>
 </head>
 
 <body>
     <header>
-
-        <img src="" alt="">
         <p class="virsh">Твій драккар лежить на дні,
             <br> Серце полум'ям горить.
             <br> Прохолодні води у морі,
@@ -65,7 +65,7 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Руни</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Руни</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="god.html">Боги</a>
@@ -74,7 +74,7 @@
                             <a class="nav-link" href="world.html">Світи</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  " href="myph.html">Міфи</a>
+                            <a class="nav-link   active" href="myph.html">Міфи</a>
                         </li>
                     </ul>
                 </div>
@@ -92,15 +92,8 @@
         </div>
         <div class="rune-wrap">
             <div class="rune-about">
-                <div class="rune-img">
-                    <img v-bind:src="currentCar.image" alt="">
-                </div>
                 <div class="rune-info">
-                    <div class="name"> <h2> {{currentCar.name}}</h2></div>
-                    <div class="element">Стихія: {{currentCar.element}}</div>
-                    <div class="god">Боги: {{currentCar.god}}</div>
-                    <div class="astrological">Астрологічна відповідність: {{currentCar.astrological}}</div>
-                    <div class="p">{{currentCar.p}}</div>
+                    <div class="name"> <h2>{{currentCar.name}}</h2> </div>
                     <div class="rune-text">
                         {{currentCar.about}}
                     </div>
@@ -128,7 +121,7 @@
 
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="script.js"> </script>
+    <script src="myph.js"> </script>
 </body>
 
 </html>

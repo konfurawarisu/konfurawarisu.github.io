@@ -1,0 +1,100 @@
+.big-foto {
+    height: 85vh;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.303), rgba(0, 0, 0, 0.224)), url(ffon.jpg);
+}
+
+header {
+    padding: 20px;
+    background-color: #333437;
+    font-family: 'Marck Script', cursive;
+    color: aliceblue;
+}
+
+.virsh {
+    text-align: right;
+    font-size: 1.1rem;
+}
+
+body {
+    margin: 0;
+    background-color: #2c2d2f;
+    padding-bottom: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(18, 26, 26);
+    text-shadow: 0px 0px 1px black;
+}
+
+img {
+    width: 100%;
+}
+
+.list-item {
+    background-color: #d5d5d5;
+    margin: 15px;
+    padding: 20px;
+    color: #041b5d;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.list-item:hover {
+    cursor: pointer;
+}
+
+.myActive {
+    background-color: rgb(39, 51, 51);
+    color: rgb(177, 174, 174);
+    font-weight: 900;
+}
+.active{
+    color: #7b819a !important;
+    font-weight: 900;
+}
+.rune-name-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link{
+    font-size: 1.5rem;
+    color: #cacee2;
+}
+.rune-about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: #cacee2;
+    
+}
+.rune-info{
+}
+.rune-info, .rune-img{
+    width: 50%;
+    padding: 20px;
+}
+.rune-info div{
+    /* Для всіх надписів до карточок*/
+    font-size: 1.1rem;
+}
+.rune-img {}
+
+@media (max-width: 768px) {
+    .rune-about {
+        flex-direction: column;         
+    }
+    .rune-info, .rune-img{
+        width: 100%;
+    }
+}
+body{
+    
+}
